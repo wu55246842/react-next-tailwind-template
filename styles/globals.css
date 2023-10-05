@@ -26,3 +26,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.disableClick {
+  pointer-events: none;
+  opacity: 0.5;
+}

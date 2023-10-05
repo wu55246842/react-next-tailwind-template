@@ -39,5 +39,5 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts"
-  ]
+, ".next/types/app/admin/chatbot/page.txs"  ]
 }

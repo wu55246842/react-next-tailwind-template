@@ -21,7 +21,7 @@ export default function Footer() {
             href="#"
             className="text-sm text-gray-600 hover:text-gray-600 md:text-base lg:text-white lg:hover:text-white"
           >
-            License
+            Contact Us
           </a>
         </li>
         <li className="mr-12">

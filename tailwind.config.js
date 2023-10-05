@@ -400,7 +400,7 @@ module.exports = {
         800: '#190793',
         900: '#11047A',
       },
-      horizonGreen: {
+      theGreen: {
         50: '#E1FFF4',
         100: '#BDFFE7',
         200: '#7BFECE',
@@ -412,7 +412,7 @@ module.exports = {
         800: '#00472D',
         900: '#002417',
       },
-      horizonOrange: {
+      theOrange: {
         50: '#FFF7EB',
         100: '#FFF1DB',
         200: '#FFE2B8',
@@ -425,7 +425,7 @@ module.exports = {
         900: '#422800',
         950: '#1F1200',
       },
-      horizonRed: {
+      theRed: {
         50: '#FCE8E8',
         100: '#FAD1D1',
         200: '#F4A4A4',
@@ -438,7 +438,7 @@ module.exports = {
         900: '#2E0505',
         950: '#170303',
       },
-      horizonBlue: {
+      theBlue: {
         50: '#EBEFFF',
         100: '#D6DFFF',
         200: '#ADBFFF',
@@ -451,7 +451,7 @@ module.exports = {
         900: '#000D3D',
         950: '#00071F',
       },
-      horizonTeal: {
+      theTeal: {
         50: '#EBFAF8',
         100: '#D7F4F2',
         200: '#AAE9E4',
@@ -464,7 +464,7 @@ module.exports = {
         900: '#0B2826',
         950: '#051413',
       },
-      horizonPurple: {
+      thePurple: {
         50: '#EFEBFF',
         100: '#E9E3FF',
         200: '#422AFB',

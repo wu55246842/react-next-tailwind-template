@@ -83,7 +83,7 @@ const Navbar = (props: {
 
         <div className="flex grab-5">
           <button
-            className="rounded-xl px-4 py-2 text-sm font-bold transition duration-300 text-gray-500 hover:text-white  hover:scale-105"
+            className="rounded-xl px-4 py-2 text-sm font-bold transition duration-300 text-gray-500 hover:text-gray-700 dark:hover:text-white  hover:scale-105"
             onClick={(): void => router.push("/auth/sign-up")}>
             Sign Up
           </button>

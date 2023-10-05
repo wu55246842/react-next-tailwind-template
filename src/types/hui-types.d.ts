@@ -13,4 +13,12 @@ declare global {
     path: string;
     secondary?: boolean | undefined;
   }
+
+  interface MessageProps {
+    id: number;
+    createdAt: number;
+    text: string;
+    ai: boolean;
+    selected: string;
+  }
 }

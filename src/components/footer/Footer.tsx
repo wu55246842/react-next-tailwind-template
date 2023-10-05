@@ -23,7 +23,7 @@ const Footer = () => {
               href="#"
               className="text-base font-medium text-gray-600 hover:text-gray-600"
             >
-              License
+              Contact Us
             </a>
           </li>
           <li>

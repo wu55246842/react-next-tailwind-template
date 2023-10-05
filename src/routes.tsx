@@ -26,9 +26,9 @@ const routes = [
     icon: <AiOutlineRobot className="h-6 w-6" />,
   },
   {
-    name: 'NFT Marketplace',
+    name: 'Marketplace',
     layout: '/admin',
-    path: 'nft-marketplace',
+    path: 'marketplace',
     icon: <MdOutlineShoppingCart className="h-6 w-6" />,
 
     secondary: true,

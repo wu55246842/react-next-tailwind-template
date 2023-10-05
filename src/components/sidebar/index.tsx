@@ -6,7 +6,7 @@ import Links from './components/Links';
 import { IRoute } from 'types/navigation';
 import FreeCard from './components/SidebarCard';
 
-function SidebarHorizon(props: { routes: IRoute[]; [x: string]: any }) {
+function Sidebar(props: { routes: IRoute[]; [x: string]: any }) {
   const { routes, open, setOpen } = props;
   return (
     <div
@@ -29,16 +29,17 @@ function SidebarHorizon(props: { routes: IRoute[]; [x: string]: any }) {
       <div className="mb-7 mt-[2rem] h-px bg-gray-300 dark:bg-white/30" />
 
 
-      {/* Nav item */}
-
       <ul className="mb-auto pt-1">
         <Links routes={routes} />
       </ul>
 
-      <FreeCard></FreeCard>
-      {/* Nav item end */}
+      
+      <div className='mx-auto'>
+        <FreeCard></FreeCard>
+      </div>
+
     </div>
   );
 }
 
-export default SidebarHorizon;
+export default Sidebar;
