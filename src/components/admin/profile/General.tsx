@@ -49,7 +49,7 @@ const General = () => {
         <div className="flex flex-col items-start justify-center rounded-2xl bg-white bg-clip-border px-3 py-4 shadow-3xl shadow-shadow-500 dark:!bg-navy-700 dark:shadow-none">
           <p className="text-sm text-gray-600">Organization</p>
           <p className="text-base font-medium text-navy-700 dark:text-white">
-            Simmmple Web LLC
+            Wuliang Web LLC
           </p>
         </div>
 

@@ -38,7 +38,7 @@ const tableColumnsTopCreators: RowObj[] = [
     rating: 68,
   },
   {
-    name: ['@simmmple.web', 'https://picsum.photos/700/320?random=4'],
+    name: ['@wuliang.web', 'https://picsum.photos/700/320?random=4'],
     artworks: 3871,
     rating: 55,
   },

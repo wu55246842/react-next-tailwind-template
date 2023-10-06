@@ -36,7 +36,7 @@ const tableDataComplex: RowObj[] = [
     bounceRate: '-1.44%',
   },
   {
-    pageName: 'Simmmple Company',
+    pageName: 'wuliang Company',
     visitors: '3.244',
     unique: '2.302',
     clients: '287',
