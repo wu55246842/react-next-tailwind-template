@@ -6,6 +6,7 @@ export interface IRoute {
   icon: JSX.Element | string;
   path: string;
   secondary?: boolean | undefined;
+  items?:any;
 }
 interface RoutesType {
   name: string;
