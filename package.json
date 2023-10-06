@@ -21,6 +21,7 @@
     "@types/react-dom": "^18.0.6",
     "apexcharts": "3.35.5",
     "dotenv": "^16.3.1",
+    "encoding": "^0.1.13",
     "framer-motion": "^7.10.2",
     "langchain": "^0.0.161",
     "moment": "^2.29.4",
