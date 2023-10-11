@@ -1,14 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-// const withTM = require('next-transpile-modules')(['@babel/preset-react']);
-//   '@fullcalendar/common',
-//   '@fullcalendar/common',
-//   '@fullcalendar/daygrid',
-//   '@fullcalendar/interaction',
-//   '@fullcalendar/react',
-
 const nextConfig = {
-  swcMinify: true,
+  swcMinify: false,
   basePath: process.env.NEXT_PUBLIC_BASE_PATH,
   assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH,
   images: {
@@ -16,12 +9,25 @@ const nextConfig = {
       'images.unsplash.com',
       'i.ibb.co',
       'scontent.fotp8-1.fna.fbcdn.net',
+      'dknlay9ljaq1f.cloudfront.net',
+      'lh3.googleusercontent.com', // google img
+      'dev-to-uploads.s3.amazonaws.com',
+      'pbs.twimg.com', // twitter img
+      'media.licdn.com', // linkedin img
     ],
-    // Make ENV
     unoptimized: true,
   },
   experimental: {
     appDir: true,
+  },
+  webpack: (config, options) => {
+    config.module.rules.push(
+      {
+        test: /\.node$/,
+        loader: "node-loader",
+      }
+    );
+    return config;
   },
 };
 
