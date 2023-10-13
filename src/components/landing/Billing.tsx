@@ -27,7 +27,7 @@ const Billing = () => (
       </p>
 
       <div className="flex flex-row flex-wrap sm:mt-10 mt-6">
-        <Button styles={`mt-10`} text="More..."/>
+        <Button styles={`mt-10`} text="More..." href=""/>
       </div>
     </div>
   </section>

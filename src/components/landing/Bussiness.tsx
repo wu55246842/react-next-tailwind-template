@@ -7,21 +7,21 @@ import styles, { layout } from "./style";
 export const features = [
   {
     id: "feature-1",
-    icon: '/img/layout/star.svg',
+    icon: '/img/layout/Star.svg',
     title: "Seamless Document Uploads",
     content:
       "Easily upload your PDF and PPT files. Our intelligent system sorts and manages them for effortless retrieval and viewing.",
   },
   {
     id: "feature-2",
-    icon: '/img/layout/shield.svg',
+    icon: '/img/layout/Shield.svg',
     title: "Accessible Document Viewing",
     content:
       "Browse and read through your uploaded documents directly within our user-friendly webapp interface.",
   },
   {
     id: "feature-3",
-    icon: '/img/layout/send.svg',
+    icon: '/img/layout/Send.svg',
     title: "Hassle-free Social Logins",
     content:
       "Get started quickly by logging in with your social media credentials. A few clicks, and you're in!",
@@ -73,7 +73,7 @@ const Business = () =>  (
         Seamlessly Upload, Explore, and Share Documents and Conversations All Within a User-friendly Intelligent Interface.
       </p>
 
-      <Button styles={`mt-10`} text="Get Start"/>
+      <Button styles={`mt-10`} text="Get Start" href="/admin/default"/>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

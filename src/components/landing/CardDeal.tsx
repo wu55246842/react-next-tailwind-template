@@ -13,7 +13,7 @@ const CardDeal = () => (
       We offer a one-stop learning platform, featuring intelligent AI chat, seamless document uploading and sharing, convenient social logins, and easy sharing of chat histories
       </p>
 
-      <Button styles={`mt-10`} text="More..."/>
+      <Button styles={`mt-10`} text="More..." href=""/>
     </div>
 
     <div className={layout.sectionImg}>

@@ -28,8 +28,8 @@ const Hero = () => {
         </p>
         <div className='flex justify-start space-x-10'>
 
-          <Button styles={`mt-10`} text="Sign In"/>
-          <Button styles={`mt-10`} text="Let's Start"/>
+          <Button styles={`mt-10`} text="Sign In" href="/auth/signin"/>
+          <Button styles={`mt-10`} text="Let's Start" href="/admin/default"/>
 
         </div>
         
