@@ -15,6 +15,10 @@ module.exports = {
 				ring: "hsl(var(--ring))",
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
+        primary: "#00040f",
+        secondary: "#00f6ff",
+        dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimBlue: "rgba(9, 151, 124, 0.1)",
 				main: {
 					gray: "#101010",
 					lg: "#151515",
@@ -26,14 +30,14 @@ module.exports = {
 					bub: "#0e0e0e",
 				},
 
-				primary: {
-					DEFAULT: "hsl(var(--primary))",
-					foreground: "hsl(var(--primary-foreground))",
-				},
-				secondary: {
-					DEFAULT: "hsl(var(--secondary))",
-					foreground: "hsl(var(--secondary-foreground))",
-				},
+				// primary: {
+				// 	DEFAULT: "hsl(var(--primary))",
+				// 	foreground: "hsl(var(--primary-foreground))",
+				// },
+				// secondary: {
+				// 	DEFAULT: "hsl(var(--secondary))",
+				// 	foreground: "hsl(var(--secondary-foreground))",
+				// },
 				destructive: {
 					DEFAULT: "hsl(var(--destructive))",
 					foreground: "hsl(var(--destructive-foreground))",
@@ -54,6 +58,9 @@ module.exports = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
+        fontFamily: {
+          poppins: ["Poppins", "sans-serif"],
+        },
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -196,6 +203,10 @@ module.exports = {
       },
     },
     screens: {
+      xs: "480px",
+      'xs-max': { max: '480px' },
+      ss: "620px",
+      'ss-max': { max: '620px' },
       sm: '576px',
       'sm-max': { max: '576px' },
       md: '768px',

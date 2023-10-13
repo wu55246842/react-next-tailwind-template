@@ -1,5 +1,4 @@
 import NavLink from 'components/link/NavLink';
-import Footer from 'components/footer/FooterAuthDefault';
 function Default(props: { mainCard: JSX.Element }) {
   const { mainCard } = props;
   return (

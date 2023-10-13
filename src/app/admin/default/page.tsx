@@ -153,9 +153,9 @@ const Dashboard = () => {
       </div>}
 
       {!showIt &&
-      <div className="w-full  text-gray-100 text-base pt-2">
+      <div className="w-full  text-gray-100 text-base pt-5">
         <div className="w-full flex justify-center">
-          <section className="text-center w-full">
+          <section className="text-center w-full space-y-10">
             <div className="w-full flex items-center justify-center space-x-2">
               <AiFillInstagram className='dark:text-gray-100 text-gray-800'></AiFillInstagram>
               <p className='dark:text-gray-100 text-gray-800'>Your document will be enriched, shared on Course Hero, and used to extract content to assist in studying. </p>
@@ -166,13 +166,14 @@ const Dashboard = () => {
                   <div role="presentation" className="relative border-2 rounded border-dashed flex flex-col 
                   focus-visible:outline-blue-100 bg-lightPrimary dark:bg-navy-800 rounded-xl px-8 py-2" >
 
-                    <div className="font-medium text-center text-md-loose md:text-base dark:text-gray-100 text-gray-800">
+                    <div className="font-medium text-center text-md-loose md:text-base dark:text-gray-100 text-gray-800 m-10">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true" className="w-12 h-12 hidden md:inline md:relative md:top-[-2px] mr-4 align-middle">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
-                      </svg>For the best results, upload docs <span className="whitespace-nowrap">with many questions</span>
+                      </svg>
+                      For the best results, upload docs <span className="whitespace-nowrap">with many questions</span>
                     </div>
                 
-                    <div className="transition-all duration-300 h-[13rem] md:h-[15rem]">
+                    <div className="transition-all duration-300 h-[16rem] md:h-[20rem]">
                       <div className="flex flex-col justify-center items-center p-8 space-y-5">
                         <AiFillFilePdf className='w-24 h-24 text-blue-500  shadow-lg'/>
                         <h3 data-testid="granite-heading" className="font-normal m-0 text-gray-900 dark:text-gray-200 md:!text-3xl lg:h-40 text-xl md:rg-text-2xl">
@@ -207,7 +208,7 @@ const Dashboard = () => {
                     <input data-testid="drop-input" type="file" className='hidden'/>
 
 
-                    <footer className="mt-4 md:mt-5 md:flex md:flex-row-reverse md:justify-between items-center">
+                    <footer className="mt-4 md:mt-5 md:flex md:flex-row-reverse md:justify-between items-center p-5">
                       <div className="flex space-x-6">
 
                           <button
