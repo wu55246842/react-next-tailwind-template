@@ -7,13 +7,13 @@ type RowObj = {
 
 const tableDataComplex: RowObj[] = [
   {
-    name: 'react-next-tailwind-template',
+    name: 'PDF.AI',
     progress: 75.5,
     status: 'Approved',
     date: '12 Jan 2021',
   },
   {
-    name: 'react-next-tailwind-template',
+    name: 'PDF.AI',
     progress: 25.5,
     status: 'Disable',
     date: '21 Feb 2021',

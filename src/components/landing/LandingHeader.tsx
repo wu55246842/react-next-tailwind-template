@@ -26,12 +26,31 @@ interface NavLink {
 const LandingHeader: React.FC = () => {
   const [toggle, setToggle] = useState(false);
   const router = useRouter();
-  const [darkmode, setDarkmode] = React.useState(document.body.classList.contains('dark'),);
-  
+  const [darkmode, setDarkmode] = React.useState(document.body.classList.contains('dark'));
+  const [logoSrc,setLogoSrc] = React.useState(
+    darkmode
+    ? "/img/layout/pdfAI_B.png" 
+    : "/img/layout/pdfAI_W.png"
+  );
+
+  const observer = new MutationObserver((mutationsList) => {
+    for (const mutation of mutationsList) {
+      // 检查是否有 classList 的变化
+      if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+        const isDarkMode = document.body.classList.contains('dark');
+        setLogoSrc(
+          isDarkMode
+          ? "/img/layout/pdfAI_B.png" 
+          : "/img/layout/pdfAI_W.png"
+        )
+      }
+    }
+  });
+  observer.observe(document.body, { attributes: true });
 
   return (
     <nav className='sticky top-0 w-full flex py-6 justify-between items-center navbar'>
-      <img src="/img/layout/laowudi_fish.png" alt="Laowudi" className='w-[124px] h-[52px]' />
+      <img src={logoSrc} alt="PDF.AI" className="w-[255px] h-[100px]" />
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {
           navLinks.map((el: NavLink, index: number) => (
@@ -48,7 +67,7 @@ const LandingHeader: React.FC = () => {
               <button
                 className="rounded-xl px-4 py-2 font-bold transition duration-300 bg-white text-black hover:bg-gray-300 hover:text-black  hover:scale-105"
                 onClick={(): void => router.push("/auth/sign-in")}>
-                Sign  In
+                Sign In
               </button>
 
               {/* <div
@@ -75,8 +94,8 @@ const LandingHeader: React.FC = () => {
       <div className='md:hidden flex flex-1 justify-end items-center'>
         <img src={toggle ? '/img/layout/close.svg' : '/img/layout/menu.svg'} alt="menu" className="w-[28px] h-[28px] object-contain"  onClick={()=>setToggle((prev)=>!prev)}/>
 
-        <div className={`${ toggle ? 'flex': 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-          <ul className='list-none flex flex-col justify-end items-center flex-1'>
+        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+          <ul className='list-none flex flex-col justify-start items-start flex-1 space-y-2'>
             {
               navLinks.map((el: NavLink, index: number) => (
                 <li key={el.id} className={`font-bold font-bold transition duration-300 mr-10
@@ -94,13 +113,13 @@ const LandingHeader: React.FC = () => {
                 Sign Up
               </button> */}
               <button
-                className="rounded-xl px-4 py-2 font-bold transition duration-300 bg-white text-black hover:bg-gray-300 hover:text-black  hover:scale-105"
+                className="rounded-xl px-4 py-2 font-bold justify-start  transition duration-300 bg-white text-black hover:bg-gray-300 hover:text-black  hover:scale-105"
                 onClick={(): void => router.push("/auth/sign-in")}>
-                Sign  In
+                Sign In
               </button>
 
               <div
-                className="cursor-pointer text-gray-600 pl-5"
+                className="cursor-pointer text-gray-600 justify-start "
                 onClick={() => {
                   if (darkmode) {
                     document.body.classList.remove('dark');
@@ -112,9 +131,9 @@ const LandingHeader: React.FC = () => {
                 }}
               >
                 {darkmode ? (
-                  <RiSunFill className="h-4 w-4 text-gray-600 dark:text-white" />
+                  <RiSunFill className="h-6 w-6 text-gray-600 dark:text-white" />
                 ) : (
-                  <RiMoonFill className="h-4 w-4 text-gray-600 dark:text-white" />
+                  <RiMoonFill className="h-6 w-6 text-gray-600 dark:text-white" />
                 )}
               </div>
             

@@ -8,14 +8,14 @@ type RowObj = {
 
 const tableDataCheck: RowObj[] = [
   {
-    name: ['react-next-tailwind-template', true],
+    name: ['PDF.AI', true],
     quantity: 2458,
     progress: '17.5%',
     date: '12 Jan 2021',
     info: true,
   },
   {
-    name: ['react-next-tailwind-template', true],
+    name: ['PDF.AI', true],
     quantity: 1485,
     progress: '10.8%',
     date: '21 Feb 2021',

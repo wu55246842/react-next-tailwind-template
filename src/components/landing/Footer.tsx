@@ -6,23 +6,23 @@ export const footerLinks = [
     links: [
       {
         name: "Content",
-        link: "https://www.Laowudi.com/content/",
+        link: "https://www.pdfai.com/content/",
       },
       {
         name: "How it Works",
-        link: "https://www.Laowudi.com/how-it-works/",
+        link: "https://www.pdfai.com/how-it-works/",
       },
       {
         name: "Create",
-        link: "https://www.Laowudi.com/create/",
+        link: "https://www.pdfai.com/create/",
       },
       {
         name: "Explore",
-        link: "https://www.Laowudi.com/explore/",
+        link: "https://www.pdfai.com/explore/",
       },
       {
         name: "Terms & Services",
-        link: "https://www.Laowudi.com/terms-and-services/",
+        link: "https://www.pdfai.com/terms-and-services/",
       },
     ],
   },
@@ -31,23 +31,23 @@ export const footerLinks = [
     links: [
       {
         name: "Help Center",
-        link: "https://www.Laowudi.com/help-center/",
+        link: "https://www.pdfai.com/help-center/",
       },
       {
         name: "Partners",
-        link: "https://www.Laowudi.com/partners/",
+        link: "https://www.pdfai.com/partners/",
       },
       {
         name: "Suggestions",
-        link: "https://www.Laowudi.com/suggestions/",
+        link: "https://www.pdfai.com/suggestions/",
       },
       {
         name: "Blog",
-        link: "https://www.Laowudi.com/blog/",
+        link: "https://www.pdfai.com/blog/",
       },
       {
         name: "Newsletters",
-        link: "https://www.Laowudi.com/newsletters/",
+        link: "https://www.pdfai.com/newsletters/",
       },
     ],
   },
@@ -56,11 +56,11 @@ export const footerLinks = [
     links: [
       {
         name: "Our Partner",
-        link: "https://www.Laowudi.com/our-partner/",
+        link: "https://www.pdfai.com/our-partner/",
       },
       {
         name: "Become a Partner",
-        link: "https://www.Laowudi.com/become-a-partner/",
+        link: "https://www.pdfai.com/become-a-partner/",
       },
     ],
   },
@@ -113,8 +113,8 @@ const Footer = () => (
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
         <img
-          src='/img/layout/laowudi_fish.png'
-          alt="Laowudi"
+          src='/img/layout/pdfai_fish.png'
+          alt="pdfai"
           className="w-[266px] h-[72.14px] object-contain"
         />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
@@ -147,7 +147,7 @@ const Footer = () => (
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        Copyright Ⓒ 2022 Laowudi. All Rights Reserved.
+        Copyright Ⓒ 2022 pdfai. All Rights Reserved.
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
