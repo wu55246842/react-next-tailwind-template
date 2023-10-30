@@ -26,14 +26,14 @@ const routes = [
     path: 'chatbot',
     icon: <AiOutlineRobot className="h-6 w-6" />,
   },
-  {
-    name: 'Marketplace',
-    layout: '/admin',
-    path: 'marketplace',
-    icon: <MdOutlineShoppingCart className="h-6 w-6" />,
+  // {
+  //   name: 'Marketplace',
+  //   layout: '/admin',
+  //   path: 'marketplace',
+  //   icon: <MdOutlineShoppingCart className="h-6 w-6" />,
 
-    secondary: true,
-  },
+  //   secondary: true,
+  // },
   {
     name: 'Data Tables',
     layout: '/admin',
